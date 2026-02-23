@@ -1,12 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import rfdLogo from '../assets/rfd_logo.png';
+import { Image } from 'astro:assets'; // 1. Add this import
 ---
 
 <Layout title="Red Forest Digital Ltd | Software Development">
 	<main>
 		<div class="container">
-			<img src={rfdLogo.src} alt="Red Forest Digital Logo" class="logo" />
+			<!-- <img src={rfdLogo.src} alt="Red Forest Digital Logo" class="logo" /> -->
+			<Image src={rfdLogo} alt="Red Forest Digital Logo" class="logo" />
 			
 			<h1>Red Forest Digital Ltd</h1>
 			<p class="tagline">Innovative Software • Mobile Platforms • Technical Strategy</p>
