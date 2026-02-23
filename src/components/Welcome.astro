@@ -1,0 +1,130 @@
+---
+import Layout from '../layouts/Layout.astro';
+import rfdLogo from '../assets/rfd_logo.png';
+---
+
+<Layout title="Red Forest Digital Ltd | Software Development">
+	<main>
+		<div class="container">
+			<img src={rfdLogo.src} alt="Red Forest Digital Logo" class="logo" />
+			
+			<h1>Red Forest Digital Ltd</h1>
+			<p class="tagline">Innovative Software • Mobile Platforms • Technical Strategy</p>
+
+			<section class="description">
+				<p>
+					Red Forest Digital Ltd is a technology company dedicated to the engineering and growth of high-performance mobile applications and software solutions. 
+				</p>
+				<p>
+					Our primary expertise lies in building utility-driven products that streamline digital experiences. Currently, our core focus is the development and optimization of our flagship mobile platform, <strong>Trove - Smart Notification</strong>.
+				</p>
+                
+                <div class="product-link">
+                    <a href="https://www.troveapps.com/" target="_blank" rel="noopener noreferrer">
+                        Explore Trove Apps &rarr;
+                    </a>
+                </div>
+
+				<p>
+					Beyond our internal product pipeline, we provide specialized technical consultancy and bespoke development services. We partner with organizations to deliver robust cloud infrastructure and scalable mobile architecture tailored to complex business needs.
+				</p>
+			</section>
+
+			<div class="contact-box">
+				<span>General Inquiries</span>
+				<a href="mailto:admin@redforestdigital.com">admin@redforestdigital.com</a>
+			</div>
+
+			<footer>
+				&copy; {new Date().getFullYear()} Red Forest Digital Ltd. Registered in England & Wales.
+			</footer>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	/* Styles remain consistent with our previous clean design */
+	main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		padding: 20px;
+	}
+	.container {
+		max-width: 700px;
+		background: white;
+		padding: 3.5rem;
+		border-radius: 12px;
+		box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+		border-top: 6px solid var(--accent);
+		text-align: center;
+	}
+	.logo {
+		max-width: 140px;
+		margin-bottom: 2rem;
+	}
+	h1 {
+		font-size: 1.8rem;
+		margin: 0;
+		color: var(--primary);
+		letter-spacing: -0.5px;
+	}
+	.tagline {
+		color: #7f8c8d; /* More neutral for a placeholder */
+		font-weight: 500;
+		font-size: 0.85rem;
+		margin-bottom: 2.5rem;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+	}
+	.description {
+		text-align: left;
+		line-height: 1.8;
+		color: #444;
+		margin-bottom: 2.5rem;
+		font-size: 1.05rem;
+	}
+    .product-link {
+        margin: 2rem 0;
+        text-align: center;
+    }
+    .product-link a {
+        display: inline-block;
+        padding: 0.7rem 1.5rem;
+        border: 2px solid var(--primary);
+        color: var(--primary);
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: 600;
+        transition: all 0.2s ease;
+    }
+    .product-link a:hover {
+        background-color: var(--primary);
+        color: white;
+    }
+	.contact-box {
+		border-top: 1px solid #eee;
+		padding-top: 2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+	.contact-box span {
+		font-size: 0.8rem;
+		text-transform: uppercase;
+		color: #95a5a6;
+		letter-spacing: 1px;
+	}
+	.contact-box a {
+		color: var(--primary);
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 1.1rem;
+	}
+	footer {
+		margin-top: 4rem;
+		font-size: 0.75rem;
+		color: #bdc3c7;
+	}
+</style>
