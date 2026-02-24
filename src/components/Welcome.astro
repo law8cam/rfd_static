@@ -4,19 +4,20 @@ import rfdLogo from '../rfd_logo.png';
 import { Image } from 'astro:assets'; // 1. Add this import
 ---
 
-<Layout title="Red Forest Digital Ltd | Software Development">
+
+<Layout title="Red Forest Digital">
 	<main>
 		<div class="container">
 			<!-- <img src={rfdLogo.src} alt="Red Forest Digital Logo" class="logo" /> -->
 			<!-- <Image src={rfdLogo} alt="Red Forest Digital Logo" class="logo" /> -->
 			<img src="/rfd_logo.png" alt="Red Forest Digital Logo" class="logo" />
 			
-			<h1>Red Forest Digital Ltd</h1>
+			<!-- <h1>Red Forest Digital Ltd</h1> -->
 			<p class="tagline">Innovative Software • Mobile Platforms • Technical Strategy</p>
 
 			<section class="description">
 				<p>
-					Red Forest Digital Ltd is a technology company dedicated to the engineering and growth of high-performance mobile applications and software solutions. 
+					<strong> Red Forest Digital </strong> is a technology company dedicated to the engineering and growth of high-performance mobile applications and software solutions. 
 				</p>
 				<p>
 					Our primary expertise lies in building utility-driven products that streamline digital experiences. Currently, our core focus is the development and optimization of our flagship mobile platform, <strong>Trove - Smart Notification</strong>.
@@ -24,7 +25,7 @@ import { Image } from 'astro:assets'; // 1. Add this import
                 
                 <div class="product-link">
                     <a href="https://www.troveapps.com/" target="_blank" rel="noopener noreferrer">
-                        Explore Trove Apps &rarr;
+                        Explore Trove &rarr;
                     </a>
                 </div>
 
@@ -85,7 +86,7 @@ import { Image } from 'astro:assets'; // 1. Add this import
         position: relative; /* Ensures it stays above the background */
     }
 	.logo {
-		max-width: 140px;
+		max-width: 240px;
 		margin-bottom: 2rem;
 	}
 	h1 {
